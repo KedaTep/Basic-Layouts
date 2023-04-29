@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#wrapper-div {
+  width: 50%;
+  min-height: 100px;
+  margin: auto;
+}
+
+#logo-nav-div {
+  width: 100%;
+  min-height: 50px;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+#logo-div {
+  width: 50%;
+  min-height: 50px;
+  float: left;
+  padding-left: 2%;
+  line-height: 50px;
+}
+
+#nav-div {
+  width: 50%;
+  min-height: 50px;
+  float: right;
+  line-height: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 10px; /* or margin-top more preferable as it eliminates the need for margin-bottom on "logo-nav-div" and easier when "row" is duplicated. But the last "row" will be left w/o any bottom margin. */
+}
+
+.col {
+  width: 20%;
+  min-height: 50px;
+  background-color: lightgray;
+  float: left;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#boxes {
+  width: 100%;
+  min-height: 150px; /* [same], margin-top preferred here. Also, bottom margin will be missed out. */
+}
+
+.box {
+  width: 30%;
+  min-height: 150px;
+  background-color: lightgray;
+  float: left;
+  line-height: 150px;
+  text-align: center;
+}
+
+.box:nth-child(2) {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#footer-div {
+  width: 100%;
+  min-height: 30px;
+  background-color: lightgray;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+}
